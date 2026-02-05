@@ -4,8 +4,8 @@ export const styles = StyleSheet.create({
     profileCircle: {
         height: 25,
         width: 25,
-        borderRadius: '50%',
-        backgroundColor: red,
+        borderRadius: '70%',
+        backgroundColor: '#b22222',
     },
 
     card: {
@@ -13,5 +13,11 @@ export const styles = StyleSheet.create({
         borderRadius: 14,
         padding: 16,
         gap: 2,
-  },
+    },
+
+    editProfile: {
+        height: 25,
+        width: 100,
+        backgroundColor: '#000000'
+    }
 });

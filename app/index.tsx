@@ -1,6 +1,6 @@
 import { Pressable, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { styles } from './Styles';
+import { styles } from "./Styles";
 
 
 export default function Index() {
@@ -12,11 +12,12 @@ export default function Index() {
           alignItems: "center",
         }}
       >
-        <Pressable onPress={() => alert("Alert message")}>
-          <Text>Alert!</Text>
-        </Pressable>
 
-      <View style = {styles.profileCircle}>test</View>
+      <View style = {styles.profileCircle}>
+        <Pressable onPress={() => alert("Alert Button pressed")}>
+          <Text>Alert</Text>
+        </Pressable>
+      </View>
 
       </View>
     </SafeAreaView>
