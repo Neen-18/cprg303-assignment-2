@@ -22,60 +22,67 @@ export default function Index() {
         </View>
 
         {/* circle that holds the profile picture */}
-        <View style={styles.profileCircle}>
-          <Pressable onPress={() => alert("Alert Button pressed")}>
-            <Text>Alert</Text>
-          </Pressable>
-        </View>
 
         {/* big box holding everything but the banner */}
         <View style={styles.container}>
           {/* edit profile box */}
           <View style={styles.editProfile}>
-            <Text
-              style={{
-                color: "white",
-                fontSize: 18,
-              }}
-            >
-              Edit Profile
-            </Text>
+            <Text style={styles.subtitle}>✎ Edit Profile</Text>
           </View>
 
           {/* Orbs balance box */}
           <View style={styles.orbsBar}>
-            <Text
-              style={{
-                color: "white",
-                fontSize: 18,
-              }}
-            >
-              Orbs Balance
-            </Text>
+            <Text style={styles.subtitle}>Orbs Balance</Text>
+            <View style={styles.orbsAmount}>
+              <Text style={styles.orbsIcon}> &#10023;</Text>
+              <Text style={styles.orbsText}>700</Text>
+            </View>
           </View>
 
           {/* About me box */}
           <View style={styles.aboutMe}>
-            <Text
-              style={{
-                color: "white",
-                fontSize: 18,
-              }}
-            >
-              About Me
-            </Text>
+            <View style={styles.subContainer}>
+              <Text style={styles.subtitle}>About Me</Text>
+              <Text style={styles.subText}>kith</Text>
+            </View>
+            <View style={styles.subContainer}>
+              <Text style={styles.subtitle}>Member Since</Text>
+              <Text style={styles.subText}>&#x2665; Sep 10, 2017</Text>
+            </View>
           </View>
 
           {/* Connections box */}
           <View style={styles.connections}>
-            <Text
-              style={{
-                color: "white",
-                fontSize: 18,
-              }}
-            >
-              Connections
-            </Text>
+            <Text style={styles.subtitle}>Connections</Text>
+            <View style={styles.connectionItem}>
+              <View style={styles.connectionLeft}>
+                <Text style={styles.appIcon}>&#9803;</Text>
+                <Text style={styles.connectionName}>TerraGirl14</Text>
+                <View style={styles.verifiedBadge}>
+                  <Text style={styles.verifiedText}>✔</Text>
+                </View>
+              </View>
+              <Text style={styles.arrow}>↗</Text>
+            </View>
+
+            <View style={styles.divider} />
+
+            {/* Connection item */}
+            <View style={styles.connectionItem}>
+              <View style={styles.connectionLeft}>
+                <Text style={styles.appIcon}>&#9801;</Text>
+                <Text style={styles.connectionName}>neen</Text>
+                <View style={styles.verifiedBadge}>
+                  <Text style={styles.verifiedText}>✔</Text>
+                </View>
+              </View>
+              <Text style={styles.arrow}>↗</Text>
+            </View>
+          </View>
+          <View style={styles.profileCircle}>
+            <Pressable onPress={() => alert("Alert Button pressed")}>
+              <Text>Alert</Text>
+            </Pressable>
           </View>
         </View>
       </View>
