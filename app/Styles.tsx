@@ -2,15 +2,37 @@ import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
   Banner: {
-    height: "20%",
+    height: 180,
     width: "100%",
+    marginBottom: 18,
   },
 
-  profileCircle: {
-    height: 25,
-    width: 25,
-    borderRadius: "70%",
+  bannerImage: {
+    width: "100%",
+    height: "100%",
+  },
+
+  avatarWrapper: {
+    position: "absolute",
+    top: 120,
+    left: 25,
+    zIndex: 10,
+  },
+
+  avatar: {
+    width: 90,
+    height: 90,
+    borderRadius: 50,
+    borderWidth: 4,
+    borderColor: "#161415",
+    backgroundColor: "#333",
+  },
+
+  alertButton: {
+    borderRadius: 15,
     backgroundColor: "#b22222",
+    paddingHorizontal: 12,
+    paddingVertical: 8,
   },
 
   card: {
@@ -21,11 +43,13 @@ export const styles = StyleSheet.create({
   },
 
   container: {
-    height: "80%",
+    flex: 1,
     width: "100%",
     backgroundColor: "#161415",
+  },
+
+  containerContent: {
     alignItems: "center",
-    justifyContent: "center",
   },
 
   subContainer: {
@@ -55,7 +79,6 @@ export const styles = StyleSheet.create({
   },
 
   orbsBar: {
-    height: "12%",
     width: "90%",
     borderRadius: 20,
     backgroundColor: "#0A0A0A",
@@ -63,7 +86,7 @@ export const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "space-between",
     paddingHorizontal: 20,
-    paddingVertical: 18,
+    paddingVertical: 15,
     margin: 10,
   },
 
@@ -152,5 +175,56 @@ export const styles = StyleSheet.create({
     height: 1,
     backgroundColor: "#1E1E1E",
     marginLeft: 35,
+  },
+
+  profileHeader: {
+    width: "90%",
+    marginBottom: 12,
+    gap: 8,
+  },
+
+  headerContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 5,
+    marginTop: 25,
+  },
+
+  name: {
+    color: "#fefefe",
+    fontSize: 26,
+    fontWeight: "700",
+  },
+
+  dropDown: { color: "#bdbdbd", fontSize: 25 },
+
+  subHeaderContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+  },
+  subHeaderText: {
+    color: "#bdbdbd",
+    fontSize: 20,
+    fontWeight: "500",
+  },
+
+  badgeContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: "#060608",
+    borderRadius: 12,
+    gap: 2,
+  },
+
+  badge: {
+    padding: 8,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+
+  badgeText: {
+    color: "#fefefe",
+    fontSize: 16,
   },
 });
